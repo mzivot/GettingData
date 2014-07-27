@@ -2,11 +2,11 @@
 These data were derived from data collected by the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The original data were produced by having 30 participants perform a variety of activities while wearing a smartphone embedded with an accelerometer and a gyroscope. The tidy data dataset contains, for each subject and activity, an average of each mean and standard deviaiton movement measure in the original dataset. This dataset was generated using the R script, run_analysis.R.
 
 ##Processing
-The script run_analysis.R performs three main tasks:  
+The script run_analysis.R performs four main tasks:  
 
 1. Reading in the data found in the zipped files on the Machine Learning Repository
-  * Replacing the numeric activity codes with the string activity labels.
-  * Replacing the variable numbers with variable names.  
+  * Replacing the numeric activity codes for each trial with the string activity labels.
+  * Replacing the variable numbers for each measurement with variable names.  
      This required removing the parentheses and replacing the commas with periods. Neither parentheses or commas are allowed as element names.
   * Matching the subject ID to each line of data.
   
@@ -16,9 +16,9 @@ The script run_analysis.R performs three main tasks:
     Measures of means were identified as containing the word "mean" in their title and measures of standard deviations were identified as containing the word "std" in their title.  
     Measures with the word "Mean" in their title were not considered mean measures. These measures represent an average across a signal window sample, rather than mean values of a single pattern.
     
-3. Average the data so that every row represents one subject and each column represents the average movement measurements for a given activity
+3. Averaging the data so that each row represents one subject and each column represents an averaged movement measurement for a given activity
 
 4. Save the resulting data as a comma-separated values text file named "samsung_tidy_data.txt"
   
 ##Variable Names
-Each variable name represents a summary of the original data. For each mean and standard deviation measure, multiple trials were averaged within subjects and activities. Therefore, each variable in the tidy dataset is a combination of the one of six activities and the one of the 78 mean or standard deviation measures. The activities names can be found in the file, "activity_labels.txt" and the measurement names can be found in the file, "features.txt".
+Each variable name represents a summary of the original data. For each mean and standard deviation measure, multiple trials were averaged within subjects and activities. Therefore, each variable in the tidy dataset is a combination of the one of the six activities and the one of the 78 mean or standard deviation measures. The activities names can be found in the file, "activity_labels.txt" and the measurement names can be found in the file, "features.txt".
