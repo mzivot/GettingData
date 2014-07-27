@@ -27,7 +27,7 @@ Variables labeled BodyAcc are the body acceleration signals. These were obtained
 Variables labeled BodyGyro are the angular velocity vectors. These were measured by the gyroscope for each window sample. The units are radians/second. 
 More information about each variable type can be found in the README.txt file or on the original website.
 
-The variables are as follows:
+The variables are as follows:   
 1   SsID    
 2	WALKING_tBodyAcc.mean.X	
 3	WALKING_tBodyAcc.mean.Y	
