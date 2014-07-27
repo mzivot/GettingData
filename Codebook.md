@@ -1,3 +1,12 @@
+1. Item 1
+  1. A corollary to the above item.
+  2. Yet another point to consider.
+2. Item 2
+  * A corollary that does not need to be ordered.
+    * This is indented four spaces, because it's two spaces further than the item above.
+    * You might want to consider making a new list.
+3. Item 3
+
 # Samsung Tidy Data Codebook
 These data were derived from data collected by the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The original data were produced by having 30 participants perform a variety of activities while wearing a smartphone embedded with an accelerometer and a gyroscope. The tidy data dataset contains, for each subject and activity, an average of each mean and standard deviaiton movement measure in the original dataset. This dataset was generated using the R script, run_analysis.R.
 
