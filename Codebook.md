@@ -3,6 +3,7 @@ These data were derived from data collected by the [UC Irvine Machine Learning R
 
 ##Processing
 The script run_analysis.R performs three main tasks:  
+
 1. Reading in the data found in the zipped files on the Machine Learning Repository
   * Replacing the numeric activity codes with the string activity labels.
   * Replacing the variable numbers with variable names.  
